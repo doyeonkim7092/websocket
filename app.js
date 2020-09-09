@@ -16,7 +16,7 @@ const app = express();
 app.set("port", process.env.PORT || 8005);
 app.set("view engine", "html");
 
-nunjucks.configure("viwes", {
+nunjucks.configure("views", {
   express: app,
   watch: true,
 });
@@ -53,7 +53,7 @@ app.use((err, req, res, next) => {
   res.render("error");
 });
 
-app.listen(app.get("port"), () => {
+const server = app.listen(app.get("port"), () => {
   console.log(app.get("port"), "번 포트에서 대기중");
 });
 
