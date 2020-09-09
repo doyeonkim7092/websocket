@@ -4,6 +4,9 @@
 
 ## ws 를 사용한 서버와 클라이언트의 통신을 테스트해보기 위한 코드 입니다
 
+![스크린샷 2020-09-10 오전 12 58 52](https://user-images.githubusercontent.com/62465445/92623232-ec67da00-f300-11ea-8866-bdf456e9ebb4.png)
+
+
 ### const morgan = require("morgan"); //접속 로그 확인
 
 ### const cookieParser = require("cookie-parser"); //요청된 쿠키를 쉽게 추출
